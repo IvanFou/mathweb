@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="./icono.png">
+    <title>MathWeb</title>
+</head>
+<body>
+    <header>
+     <img  class="logo" src="./MATH.png" alt="">
+        <li class="navegacion">
+            <ul><a href="#Geometry">Geometry</a></ul>
+            <ul><a href="#Probabilidad">Probability</a></ul>
+            <ul>Analitycs</ul>
+            <ul>Cost</ul>
+        </li>
+    </header>
+
+    <main>
+        <section class="descripcion">
+            <h2>MathWeb</h2>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipiscing 
+                elit primis metus nascetur torquent pretium, class fames cursus 
+                ligula dignissim orci porttitor facilisi magnis scelerisque tristique 
+                euismod ad, iaculis quisque sem tellus pulvinar nunc non arcu sagittis 
+                blandit cubilia. Pharetra platea ullamcorper nec hendrerit malesuada arcu 
+                aenean metus, lobortis non morbi nascetur luctus porta ut dignissim lacinia,
+                scelerisque odio iaculis vivamus facilisis posuere commodo. Suscipit aenean 
+                quis sagittis erat varius orci est vel mauris mus cursus rutrum ut conubia, 
+                interdum luctus venenatis a litora gravida aptent curae massa feugiat mi aliquet
+                class.</p>
+                <button>Geometry</button>
+                <button>Statics</button>
+                <button>Ecuaciones</button>
+        </section>
+        <img src="./dibujo.png" alt="">
+    </main>
+
+    <section id="Geometry" class="Geometry">
+        <h2>Geometry</h2>
+      <section class="Geometry__cuadros">
+        <section class="Cuadrado">
+            <div class="figure__title">
+              <img class="figure__title--img" src="https://img.icons8.com/small/64/ffffff/rounded-square.png"/>
+              <h3>Cuadrado</h3> 
+            </div>
+            <label for="">Escribe cuando mide un lado de tu cuadrado</label>
+            <input id="InputCuadrado" type="number" placeholder="Lado">
+            <button type="button" onclick="calcularPerimetroCuadrado()" >Perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Area</button>
+            <p id="inputRCuadrado">Seleccione la opcion deseada</p>
+        </section>
+
+
+        <section class="Triangulo">
+            <div class="figure__title">
+              <img class="figure__title--img" src="https://img.icons8.com/small/64/ffffff/three-triangles.png"/>
+              <h3>Triangulo</h3> 
+            </div>
+            <label for="">Escribe cuando mide un lado de tu Triangulo</label>
+            <section class="inputTriangulo">
+                <input id="inputTrianguloBase" type="number" placeholder="Base">
+                <input id="inputTrianguloAltura" type="number" placeholder="Altura">
+                <input id="inputTrianguloL1" type="number" placeholder="Lado 1">
+                <input id="inputTrianguloL2" type="number" placeholder="Lado 2">
+            </section>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Area</button>
+            <button type="button" onclick="tipodeTriangulo()">Triangulo</button> 
+            <p id="inputRTriangulo">Seleccione la opcion deseada</p>
+           </section>
+
+
+        <section class="Circulo">
+            <div class="figure__title">
+              <img class="figure__title--img"  src="https://img.icons8.com/small/96/ffffff/bubble.png"/>
+              <h3>Circulo</h3> 
+            </div>
+            <label for="">Escribe el radio de tu circulo</label>
+            <input id="inputCirculo" type="number" placeholder="Radio">
+            <button type="button" onclick="calcularPerimetroCirculo()">Perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Area</button>
+            <p id="inputRCirculo">Seleccione la opcion deseada</p>
+        </section>  
+      </section>
+    </section>
+
+    <section class="porcentajes">
+        <h2>Porcentajes</h2>
+        <form class="porcentajes__cuadros">
+            <h3>Calcula el Porcentaje de tus cantidades</h3>
+            <label for="">Ingresa la Cantidad total</label>
+            <input id="inputPrecio" type="number" placeholder="$">
+            <label for="">Ingresa el Porcentaje a descontar</label>
+            <input id="inputDescuento" type="number" placeholder="%">
+            <button type="button" onclick="calcularelPrecio()">Resultado</button>
+            <p id="inputTotal">Tu precio total es $ </p>
+        </form>
+    </section>
+
+<!-- 
+  <section id="Probabilidad" class="probabilidad">
+        <h2>Probababilidad</h2>
+        <section class="probabilidad__promedio">
+            <h3>Promedio</h3>
+            <section class="promedio__ventanas">
+              <form class="probabilidad_promedio--form" action="">
+                <label for="inputAmount">Calcula la media aritmética</label>
+                <input id="inputAmount" type="number" min="2" max="10">
+                <button type="button" onclick="mostrarDatos()">Mostrar datos</button>
+                </form>
+
+                <form action="">
+                    <section class="container-result">
+                      <section class="container-excercise">
+                        <section class="content-excercise">
+                             <section class="content-dividend">
+                                 <section class="dividend">
+                                    <div class="inputBox">
+                                         <input id="" type="number">
+                                    </div>
+                                    <div class="inputBox">
+                                         <input id="" type="number">
+                                    </div>
+                                    <div class="divider">
+                                        <p class="numberAmount"></p>
+                                    </div>
+                                    <button type="button" onclick="resultMediaAritmetica()"> = </button>
+                                    <p class="result"></p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                 </section>
+                </form>
+            </section>
+        </section>
+    </section>  -->
+
+
+
+    <footer class="footer">
+        <li class="footer__lista">
+            <ul>Privacidad</ul>
+            <ul>Terminos</ul>
+            <ul>Ivan Garcia</ul>
+        </li>
+    </footer>
+    <script src="./figuras.js"></script>
+    <script src="salarios.js"></script>
+    <script src="analisis.js"></script>
+</body>
+</html>
